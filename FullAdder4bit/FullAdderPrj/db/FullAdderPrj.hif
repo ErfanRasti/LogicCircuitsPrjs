@@ -1,0 +1,129 @@
+Version 9.0 Build 132 02/25/2009 SJ Web Edition
+32
+1984
+OFF
+OFF
+OFF
+ON
+ON
+OFF
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+FullAdderPrj
+# storage
+db|FullAdderPrj.(0).cnf
+db|FullAdderPrj.(0).cnf
+# case_insensitive
+# source_file
+FullAdderPrj.bdf
+596ee3b4e932b28d4c9cb94382df280
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+HalfAdder
+# storage
+db|FullAdderPrj.(3).cnf
+db|FullAdderPrj.(3).cnf
+# case_insensitive
+# source_file
+HalfAdder.bdf
+78e76f59528dc862aa5f5e4faf45157
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+FullAdder4bit:inst|FullAdder1bit:inst3|HalfAdder:inst1
+FullAdder4bit:inst|FullAdder1bit:inst3|HalfAdder:inst
+FullAdder4bit:inst|FullAdder1bit:inst2|HalfAdder:inst1
+FullAdder4bit:inst|FullAdder1bit:inst2|HalfAdder:inst
+FullAdder4bit:inst|FullAdder1bit:inst1|HalfAdder:inst1
+FullAdder4bit:inst|FullAdder1bit:inst1|HalfAdder:inst
+FullAdder4bit:inst|FullAdder1bit:inst|HalfAdder:inst1
+FullAdder4bit:inst|FullAdder1bit:inst|HalfAdder:inst
+}
+# macro_sequence
+
+# end
+# entity
+Finalprj
+# storage
+db|FullAdderPrj.(4).cnf
+db|FullAdderPrj.(4).cnf
+# case_insensitive
+# source_file
+Finalprj.bdf
+1431f7ea8ae1fa1c6652505787b5a394
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+FullAdder1bit
+# storage
+db|FullAdderPrj.(1).cnf
+db|FullAdderPrj.(1).cnf
+# case_insensitive
+# source_file
+FullAdder1bit.bdf
+174bf82c76f55375f1d5b0192212a46
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+FullAdder4bit:inst|FullAdder1bit:inst3
+FullAdder4bit:inst|FullAdder1bit:inst2
+FullAdder4bit:inst|FullAdder1bit:inst1
+FullAdder4bit:inst|FullAdder1bit:inst
+}
+# macro_sequence
+
+# end
+# entity
+FullAdder4bit
+# storage
+db|FullAdderPrj.(2).cnf
+db|FullAdderPrj.(2).cnf
+# case_insensitive
+# source_file
+FullAdder4bit.bdf
+78cdba59351452119d21daf46a3c3e31
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+FullAdder4bit:inst
+}
+# macro_sequence
+
+# end
+# complete
+
